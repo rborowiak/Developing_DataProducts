@@ -1,0 +1,17 @@
+
+---
+title: ''
+output: html_document
+---
+
+```{r, echo=TRUE}
+Sys.Date()
+```
+
+```{r, echo=FALSE}
+library(leaflet)
+m <- leaflet() 
+m <- addTiles(m)
+m <- addMarkers(m, lat=37.178056, lng = -3.6, popup="Granada")
+m
+```
